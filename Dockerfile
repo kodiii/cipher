@@ -7,7 +7,7 @@ ARG NODE_VERSION=20.18.1
 FROM node:${NODE_VERSION}-alpine AS builder
 
 # Build argument to control UI building (default: false)
-ARG BUILD_UI=false
+ARG BUILD_UI=true
 
 # Install build dependencies for native modules
 RUN apk add --no-cache \
